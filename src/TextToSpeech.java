@@ -95,6 +95,7 @@ public class TextToSpeech {
             OutputStream out = new FileOutputStream("text.mp3");
             int index = 0;
 
+	// TODO: fix the api key thing
             while (index < textList.size()) {
 //                HttpResponse<InputStream> response = Unirest.get("https://montanaflynn-text-to-speech.p.mashape.com/speak?text={param}")
 //                        .header("X-Mashape-Key", "").routeParam("param", textList.get(index)).asBinary();
