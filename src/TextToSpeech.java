@@ -90,6 +90,7 @@ public class TextToSpeech {
     }
 
     public void playAudio(ArrayList<String> textList) {
+        // did this to make sure the bytes writen would fit
         byte[] audioInfo = new byte[3000000];
         try {
             OutputStream out = new FileOutputStream("text.mp3");
