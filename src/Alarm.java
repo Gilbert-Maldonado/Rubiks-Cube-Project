@@ -128,7 +128,8 @@ public class Alarm {
         return currHour.equals(alarmHour) && currMinute.equals(alarmMinute);
     }
     
-    //When the alarm should be sounded
+    //When the alarm should be sounded; have to synchronize the calls to the media player
+    // and the text to speech
     private void soundAlarm()
     {
         tts.convertText(text.toString());
@@ -149,6 +150,7 @@ public class Alarm {
             mediaPlayer.setCycleCount(MediaPlayer.INDEFINITE);
             mediaPlayer.play();
 
+            // Look into this
             while(!isSolved) {
                 soundAlarmHelper(mediaPlayer);
             }
