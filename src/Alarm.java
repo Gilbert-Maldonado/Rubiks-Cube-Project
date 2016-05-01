@@ -166,6 +166,7 @@ public class Alarm {
     private void soundAlarmHelper(MediaPlayer mediaPlayer) {
 
         try {
+            // Look into this whole segment.
             Process p = Runtime.getRuntime().exec("cmd /C button.py");
             BufferedReader in = new BufferedReader(
                     new InputStreamReader(p.getInputStream()));
