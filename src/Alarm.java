@@ -65,9 +65,7 @@ public class Alarm {
         alarmHour = hour;
         alarmMinute = minute;
 
-
         turnOnAlarm();
-
     }
     
     /* turnOffAlarm
@@ -154,7 +152,6 @@ public class Alarm {
             while(!isSolved) {
                 soundAlarmHelper(mediaPlayer);
             }
-
         }
         catch(Exception e) {
             System.out.println("soundAlarm method");
@@ -189,5 +186,4 @@ public class Alarm {
             e.printStackTrace();
         }
     }
-    
 }
