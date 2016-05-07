@@ -82,22 +82,10 @@ public class Alarm {
         tick();
     }
 
-    /* setTime
-     * inputs: hour, minute, second
-     * outputs: none
-     * purpose: This updates the current time to the values
-     * passed in.
-     */
-    public void setTime(int hour, int minute, int second)
-    {
-//        currentHour = hour;
-//        currentMinute = minute;
-//        currentSecond = second;
-    }
-
     /*
-     * purpose: This gets called each second.  It updates the current time
-     * of the clock and sets of the alarm if necessary
+     * This gets called each second.  It updates the current time
+     * of the clock and sets of the alarm if necessary, not sure if this was 
+     * the best way but didn't know anything else at time
      */
     public void tick()
     {
