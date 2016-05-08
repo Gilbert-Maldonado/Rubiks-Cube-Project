@@ -112,11 +112,11 @@ public class TextReader {
 		StringBuilder message = new StringBuilder();
 		try{
 			message.append("Now for today's news from the world section of the BBC news.");
+			// Open up the stream to BBC news
 			url = new URL(NEWS);
 			InputStream is = url.openStream();
 		
 			DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-			
 			DocumentBuilder builder = factory.newDocumentBuilder();
 			
 			Document document = (Document)builder.parse(is);
@@ -155,7 +155,7 @@ public class TextReader {
         return text;
 	}
 	
-	//Sets the text
+	// Gets the current text with accordance to the API calls
 	public void calculateText() {
         text.append(getCurrentTime().substring(6,8).equals("AM") ? "Good Morning " :
                     "Good Afternoon ");
