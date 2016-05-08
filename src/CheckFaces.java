@@ -8,6 +8,10 @@ import java.io.IOException;
 import java.nio.Buffer;
 import javax.imageio.ImageIO;
 
+/*
+    This code is pretty gacky. It's checking the face as if the cube were
+    always placed the same way; which is terrible.
+*/
 public class CheckFaces {
 
     private BufferedImage image;

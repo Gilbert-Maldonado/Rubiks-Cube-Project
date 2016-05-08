@@ -17,7 +17,8 @@ import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
  
 /*
- * Class that reads in texts and outputs it as an audio
+ * Class that reads in texts and outputs it as an audio, I have the API keys stored 
+ * a safer way. But it's not pushed yet.
  */
 public class TextReader {
 
@@ -166,7 +167,5 @@ public class TextReader {
 		text.append(getNews());
         text.append("The alarm will not turn off unless you solve the Rubik's Cube. Have a nice day.");
 		System.out.println(text);
-
 	}
-	
 }
