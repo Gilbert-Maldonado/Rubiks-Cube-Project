@@ -114,7 +114,7 @@ public class TextToSpeech {
             }
             out.close();
             Unirest.shutdown();
-
+            // TODO: fix this line
             String bits = "file:///C:/Users/super_000/Desktop/Rubik's%20Cube%20Proj/text.mp3";
 
             final CountDownLatch latch = new CountDownLatch(1);
